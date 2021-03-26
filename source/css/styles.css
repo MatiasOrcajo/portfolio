@@ -143,6 +143,7 @@ p {
         width: 0;
         height: 1px;
         background: black;
+        transition: width .3s;
     }
     .menu-item:hover::after {
         width: 100%;
@@ -516,13 +517,29 @@ p {
 }
 
 
-/* listones */
+/* tecnologies images */
 
-.listones {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    align-items: center;
+.tecnologies-images {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+}
+
+.tecnologies-image {
+    padding-bottom: 1rem;
+}
+
+.tecnologies-image img {
+    width: 300px;
+    height: auto;
+    filter: saturate(0);
+    transition: all .5s;
+}
+
+.tecnologies-image img:hover {
+    transition: all .5s;
+    filter: saturate(1);
 }
 
 .listones-container {
@@ -537,45 +554,20 @@ p {
 }
 
 @media (min-width: 800px) {
-    .listones {
+    .tecnologies-images {
         display: grid;
-        grid-template-columns: 250px 250px;
-        grid-template-rows: 150px 150px;
+        grid-template-columns: 180px 180px 180px 180px;
+        grid-template-rows: 180px 180px;
         align-items: center;
         justify-content: center;
+        padding-bottom: 5rem;
     }
-}
-
-.css {
-    background: rgb(21, 114, 182);
-    background: linear-gradient(90deg, rgba(21, 114, 182, 1) 0%, rgba(51, 169, 220, 1) 50%);
-}
-
-.JS {
-    background: rgb(213, 185, 49);
-    background: linear-gradient(90deg, rgba(213, 185, 49, 1) 0%, rgba(255, 218, 62, 1) 50%);
-}
-
-.node {
-    background: rgb(60, 135, 58);
-    background: linear-gradient(90deg, rgba(60, 135, 58, 1) 0%, rgba(115, 187, 82, 1) 50%);
-    height: 27px;
-}
-
-.MySQL {
-    background: rgb(0, 97, 138);
-    background: linear-gradient(90deg, rgba(0, 97, 138, 1) 0%, rgba(228, 142, 0, 1) 61%);
-    height: 27px;
-}
-
-.Git {
-    background: rgb(240, 80, 51);
-    background: linear-gradient(90deg, rgba(240, 80, 51, 1) 0%, rgb(255, 164, 136) 100%);
-}
-
-.Github {
-    background: rgb(0, 0, 0);
-    background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgb(138, 138, 138) 100%);
+    .tecnologies-image img {
+        width: 150px;
+        height: auto;
+        filter: saturate(0);
+        transition: all .5s;
+    }
 }
 
 
