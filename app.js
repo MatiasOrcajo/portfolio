@@ -1,8 +1,13 @@
 const express = require('express')
 app = express()
-server = require('http').createServer(app)
 path = require('path')
-const port = 3000
+const http = require('http')
+const server = http.createServer(app)
+
+// settings
+
+app.set('port', process.env.PORT || 3000)
+
 
 // leer archivos estáticos
 
@@ -23,6 +28,6 @@ app.get("/descargar/MatiasOrcajoCV", (req, res) => {
 
 // escuchamos el puerto
 
-app.listen(port, () => {
-    console.log(`localhost:${port}`);
+server.listen(app.get('port'), () => {
+    console.log(`server on port ${app.get('port')}`);
 })
