@@ -600,12 +600,14 @@ p {
     font-size: 4rem;
 }
 
-.social-media a:visited {
+
+/* .social-media a:visited {
     color: black;
-}
+} */
 
 .social-media i {
     margin: 1rem;
+    color: black;
 }
 
 @media (min-width: 800px) {
