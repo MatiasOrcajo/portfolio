@@ -1,0 +1,112 @@
+/* tecnologies */
+
+.tecnologies {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin: 0 auto;
+    grid-gap: 3rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.tecnologies-title {
+    text-align: center;
+}
+
+@media (min-width: 800px) {
+    .tecnologies {
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 4rem;
+        padding-bottom: 8rem;
+    }
+    .tecnologies-title {
+        text-align: left;
+    }
+}
+
+@media (min-width: 1200px) {
+    .tecnologies {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 4rem;
+    }
+    .tecnologies-title {
+        text-align: left;
+    }
+}
+
+.tecnologies img {
+    width: 150px;
+}
+
+.tecnologies-flex {
+    margin: 3rem 0 3rem 0;
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 800px) {
+    .tecnologies-flex {
+        margin: 3rem 0 3rem 0;
+        display: flex;
+        justify-content: space-between;
+    }
+    .tecnologies img {
+        width: 150px;
+        padding: 0px;
+    }
+}
+
+
+/* tecnologies images */
+
+.tecnologies-images {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tecnologies-image {
+    padding-bottom: 1rem;
+}
+
+.tecnologies-image img {
+    width: 300px;
+    height: auto;
+    filter: saturate(0);
+    transition: all .5s;
+}
+
+.tecnologies-image img:hover {
+    transition: all .5s;
+    filter: saturate(1);
+}
+
+.listones-container {
+    display: block;
+    margin-bottom: 5rem;
+    padding: 1.5rem 2rem 1.5rem 0;
+    border: 1px solid black;
+    width: 200px;
+    box-shadow: 0 2px 20px;
+    color: white;
+    font-size: 1.5rem;
+}
+
+@media (min-width: 800px) {
+    .tecnologies-images {
+        display: grid;
+        grid-template-columns: 180px 180px 180px 180px;
+        grid-template-rows: 180px 180px;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 5rem;
+    }
+    .tecnologies-image img {
+        width: 150px;
+        height: auto;
+        filter: saturate(0);
+        transition: all .5s;
+    }
+}

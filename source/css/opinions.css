@@ -1,0 +1,124 @@
+/* opinions */
+
+.opinions {
+    background-color: black;
+    /* height: 70rem; */
+    /* transform: translateY(-20px); */
+    margin-top: 10rem;
+    padding-top: 2rem;
+    color: white;
+    position: relative;
+    padding-bottom: 2rem;
+}
+
+@media (min-width: 800px) {
+    .opinions {
+        /* transform: translateY(-250px); */
+        height: auto;
+    }
+}
+
+.opinions p {
+    color: rgb(255, 255, 255);
+    font-style: italic;
+    z-index: 999;
+    position: relative;
+}
+
+.opinion {
+    margin: 0;
+    text-align: center;
+    padding: 1rem;
+    border: 1px solid #BC9668;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+    align-self: center;
+    height: 493px;
+    justify-self: center;
+}
+
+@media (min-width: 800px) {
+    .opinion {
+        margin: 0;
+        text-align: center;
+        width: 300px;
+    }
+}
+
+.opinion h2 {
+    padding-bottom: 2rem;
+}
+
+.opinion span {
+    font-weight: 200;
+    font-size: 1rem;
+}
+
+.background {
+    position: absolute;
+    top: 0;
+}
+
+.background img {
+    width: 100%;
+}
+
+.background-cierre {
+    position: absolute;
+    bottom: 0;
+    transform: translateY(45px);
+}
+
+@media (min-width: 470px) {
+    .background-cierre {
+        position: absolute;
+        bottom: 0;
+        transform: translateY(55px);
+    }
+}
+
+.background-cierre img {
+    width: 100%;
+}
+
+.quote-image {
+    position: absolute;
+    transform: translate(-55px, -50px);
+}
+
+.quote-image img {
+    width: 200px;
+    opacity: 0.5;
+}
+
+.opinion-image {
+    height: 96px;
+    width: 96px;
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    margin: 0 auto;
+}
+
+.opinion-image img {
+    height: 96px;
+    width: 96px;
+    background-color: #BC9668;
+    position: absolute;
+    border-radius: 50%;
+    border: 5px solid #BC9668;
+    margin: 0;
+}
+
+.opinion-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 10px;
+}
+
+@media (min-width: 1000px) {
+    .opinion-container {
+        display: flex;
+        justify-content: space-around;
+    }
+}
