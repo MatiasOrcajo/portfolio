@@ -121,3 +121,18 @@ contactBtn.addEventListener('click', (e) => {
     smoothScroll('.connect', 1000)
 
 })
+
+// go up
+
+const upBtn = document.getElementById('upBtn')
+
+upBtn.addEventListener('click', (e) => {
+    e.preventDefault()
+    smoothScroll('.up', 1000)
+
+})
+
+window.addEventListener('scroll', () => {
+    upBtn.style.transition = 'all 1s'
+    upBtn.style.opacity = '1'
+})
