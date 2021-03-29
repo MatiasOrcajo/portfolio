@@ -133,6 +133,6 @@ upBtn.addEventListener('click', (e) => {
 })
 
 window.addEventListener('scroll', () => {
-    upBtn.style.transition = 'all 1s'
+    upBtn.style.transition = 'all 1.1s'
     upBtn.style.opacity = '1'
 })

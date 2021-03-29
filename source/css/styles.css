@@ -39,14 +39,23 @@ p {
 
 /* posicionando nombre y menu responsive */
 
-.hero-first-container h2 {
-    display: inline;
+.hero-first-container {
+    padding: 0;
+}
+
+.hero-first-container img {
+    height: 100px;
+}
+
+@media (min-width: 800px) {
+    .hero-first-container img {
+        height: 120px;
+    }
 }
 
 .name-and-bars {
     display: flex;
     justify-content: space-between;
-    padding-top: 2rem;
     align-items: center;
 }
 
