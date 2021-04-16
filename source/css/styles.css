@@ -425,6 +425,12 @@ p {
     }
 }
 
+.footer h3 {
+    position: absolute;
+    justify-self: center;
+    align-self: center;
+}
+
 
 /* fixed button */
 
