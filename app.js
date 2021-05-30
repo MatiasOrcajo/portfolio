@@ -20,8 +20,8 @@ app.get('/', (req, res) => {
 
 // descargar cv
 
-app.get("/descargar/MatiasOrcajoCV", (req, res) => {
-    res.download(__dirname + "/source/MatiasOrcajoCV.pdf")
+app.get("/descargar/MatiasOrcajoIT", (req, res) => {
+    res.download(__dirname + "/source/MatiasOrcajoIT.pdf")
 })
 
 
